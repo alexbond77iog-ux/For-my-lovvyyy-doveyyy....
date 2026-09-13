@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning, Beautiful! ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Floating hearts element -->
+        <div class="heart-icon">☀️❤️</div>
+        
+        <h1>Good Morning, Sunshine!</h1>
+        <p class="subtitle">I wanted to make your morning a little extra special today.</p>
+        
+        <!-- Interactive Surprise Button -->
+        <button id="surpriseBtn" onclick="revealLetter()">Click for a morning message</button>
+        
+        <!-- Hidden Letter Section -->
+        <div id="loveLetter" class="hidden">
+            <div class="card">
+                <p>Hey Beautiful,</p>
+                <p>I hope you slept well. I wanted you to wake up to something that reminds you of how much you mean to me. You make every day brighter just by being in it.</p>
+                <p>Have an amazing day today. I'm always cheering for you!</p>
+                <p class="signature">Forever yours, <br><strong>[Your Name]</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function revealLetter() {
+            var letter = document.getElementById("loveLetter");
+            letter.classList.toggle("hidden");
+            letter.style.animation = "fadeIn 1s ease-in-out forwards";
+        }
+    </script>
+</body>
+</html>
